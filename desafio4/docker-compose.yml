@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  users:
+    build: ./users
+    ports:
+      - "5001:5001"
+
+  consumer:
+    build: ./consumer
+    ports:
+      - "5002:5002"
+    depends_on:
+      - users

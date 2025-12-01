@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  users:
+    build: ./users
+  orders:
+    build: ./orders
+  gateway:
+    build: ./gateway
+    ports:
+      - "8082:8082"
+    depends_on:
+      - users
+      - orders
