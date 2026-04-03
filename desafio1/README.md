@@ -2,7 +2,7 @@
 
 Objetivo
 --------
-Dois containers comunicando-se via uma rede Docker nomeada: um servidor Flask (porta 8080) e um cliente que faz requisições periódicas.
+Dois containers comunicando-se via rede Docker nomeada: um servidor Flask (porta 8080) e um cliente que faz requisições periódicas.
 
 Funcionamento e decisões de implementação
 ----------------------------------------
